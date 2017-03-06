@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D3C51610A271BC57F20A657 /* libPods-TeppeiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 326C6C465FF05EE353AFB974 /* libPods-TeppeiTests.a */; };
+		16217481F8A29838435CF165 /* libPods-Teppei-TeppeiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A9A1610103E9D40BF26257 /* libPods-Teppei-TeppeiTests.a */; };
+		181157091E6D5C0A007EF23E /* libNCMB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 181157081E6D5C0A007EF23E /* libNCMB.a */; };
+		1853B1C91E24E4B4002024F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B1C81E24E4B4002024F8 /* main.m */; };
+		1853B1CC1E24E4B4002024F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B1CB1E24E4B4002024F8 /* AppDelegate.m */; };
+		1853B1CF1E24E4B4002024F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B1CE1E24E4B4002024F8 /* ViewController.m */; };
+		1853B1D21E24E4B4002024F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1853B1D01E24E4B4002024F8 /* Main.storyboard */; };
+		1853B1D41E24E4B4002024F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1853B1D31E24E4B4002024F8 /* Assets.xcassets */; };
+		1853B1D71E24E4B4002024F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1853B1D51E24E4B4002024F8 /* LaunchScreen.storyboard */; };
+		1853B1E21E24E4B4002024F8 /* TeppeiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B1E11E24E4B4002024F8 /* TeppeiTests.m */; };
+		1853B1F01E24F99A002024F8 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B1EF1E24F99A002024F8 /* SignupViewController.m */; };
+		1853B1F31E24FA73002024F8 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B1F21E24FA73002024F8 /* HomeViewController.m */; };
+		1853B1F61E24FAD9002024F8 /* DoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B1F51E24FAD9002024F8 /* DoneViewController.m */; };
+		1853B1F91E24FD59002024F8 /* TeppeiNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B1F81E24FD59002024F8 /* TeppeiNavigationController.m */; };
+		18BA6D701E3A26FD0032CB66 /* SkillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA6D6F1E3A26FD0032CB66 /* SkillViewController.m */; };
+		18BA6D731E3A2E9D0032CB66 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA6D721E3A2E9D0032CB66 /* QuestionViewController.m */; };
+		18BA6D771E3A30AD0032CB66 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA6D761E3A30AD0032CB66 /* Question.m */; };
+		B6D348E7E86C838507D3B9B3 /* libPods-Teppei.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBF5A5DAFB531E90FBF075C /* libPods-Teppei.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1853B1DE1E24E4B4002024F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1853B1BC1E24E4B3002024F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1853B1C31E24E4B4002024F8;
+			remoteInfo = Teppei;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		181157081E6D5C0A007EF23E /* libNCMB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNCMB.a; path = "Pods/../build/Debug-iphoneos/NCMB/libNCMB.a"; sourceTree = "<group>"; };
+		1853B1C41E24E4B4002024F8 /* Teppei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teppei.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1853B1C81E24E4B4002024F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1853B1CA1E24E4B4002024F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1853B1CB1E24E4B4002024F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1853B1CD1E24E4B4002024F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1853B1CE1E24E4B4002024F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1853B1D11E24E4B4002024F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1853B1D31E24E4B4002024F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1853B1D61E24E4B4002024F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1853B1D81E24E4B4002024F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1853B1DD1E24E4B4002024F8 /* TeppeiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeppeiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1853B1E11E24E4B4002024F8 /* TeppeiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeppeiTests.m; sourceTree = "<group>"; };
+		1853B1E31E24E4B4002024F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1853B1EE1E24F99A002024F8 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignupViewController.h; path = Controlller/SignupViewController.h; sourceTree = "<group>"; };
+		1853B1EF1E24F99A002024F8 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignupViewController.m; path = Controlller/SignupViewController.m; sourceTree = "<group>"; };
+		1853B1F11E24FA73002024F8 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Controlller/HomeViewController.h; sourceTree = "<group>"; };
+		1853B1F21E24FA73002024F8 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Controlller/HomeViewController.m; sourceTree = "<group>"; };
+		1853B1F41E24FAD9002024F8 /* DoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DoneViewController.h; path = Controlller/DoneViewController.h; sourceTree = "<group>"; };
+		1853B1F51E24FAD9002024F8 /* DoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DoneViewController.m; path = Controlller/DoneViewController.m; sourceTree = "<group>"; };
+		1853B1F71E24FD59002024F8 /* TeppeiNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeppeiNavigationController.h; path = Controlller/TeppeiNavigationController.h; sourceTree = "<group>"; };
+		1853B1F81E24FD59002024F8 /* TeppeiNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeppeiNavigationController.m; path = Controlller/TeppeiNavigationController.m; sourceTree = "<group>"; };
+		18BA6D6E1E3A26FD0032CB66 /* SkillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillViewController.h; sourceTree = "<group>"; };
+		18BA6D6F1E3A26FD0032CB66 /* SkillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillViewController.m; sourceTree = "<group>"; };
+		18BA6D711E3A2E9D0032CB66 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionViewController.h; path = Controlller/QuestionViewController.h; sourceTree = "<group>"; };
+		18BA6D721E3A2E9D0032CB66 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionViewController.m; path = Controlller/QuestionViewController.m; sourceTree = "<group>"; };
+		18BA6D751E3A30AD0032CB66 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Question.h; path = Entity/Question.h; sourceTree = "<group>"; };
+		18BA6D761E3A30AD0032CB66 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Question.m; path = Entity/Question.m; sourceTree = "<group>"; };
+		326C6C465FF05EE353AFB974 /* libPods-TeppeiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TeppeiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA802613B09DCA337ABC7A3 /* Pods-TeppeiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeppeiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeppeiTests/Pods-TeppeiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		44FD878E0313047F991193CB /* Pods-Teppei-TeppeiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teppei-TeppeiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teppei-TeppeiTests/Pods-Teppei-TeppeiTests.release.xcconfig"; sourceTree = "<group>"; };
+		68A9A1610103E9D40BF26257 /* libPods-Teppei-TeppeiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Teppei-TeppeiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		827832CD51AC31428311878A /* Pods-Teppei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teppei.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teppei/Pods-Teppei.release.xcconfig"; sourceTree = "<group>"; };
+		9C6461D3A5820A1F601B69D8 /* Pods-Teppei-TeppeiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teppei-TeppeiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Teppei-TeppeiTests/Pods-Teppei-TeppeiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CBF5A5DAFB531E90FBF075C /* libPods-Teppei.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Teppei.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7665104FA29E3D796CC1216 /* Pods-TeppeiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeppeiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeppeiTests/Pods-TeppeiTests.release.xcconfig"; sourceTree = "<group>"; };
+		F2E71BE1FDD0592CD309A7D1 /* Pods-Teppei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teppei.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Teppei/Pods-Teppei.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1853B1C11E24E4B4002024F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181157091E6D5C0A007EF23E /* libNCMB.a in Frameworks */,
+				B6D348E7E86C838507D3B9B3 /* libPods-Teppei.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1853B1DA1E24E4B4002024F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D3C51610A271BC57F20A657 /* libPods-TeppeiTests.a in Frameworks */,
+				16217481F8A29838435CF165 /* libPods-Teppei-TeppeiTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1853B1BB1E24E4B3002024F8 = {
+			isa = PBXGroup;
+			children = (
+				1853B1C61E24E4B4002024F8 /* Teppei */,
+				1853B1E01E24E4B4002024F8 /* TeppeiTests */,
+				1853B1C51E24E4B4002024F8 /* Products */,
+				36CB31E57BB6830EDBCC38B9 /* Pods */,
+				99A524105DB1BA25C0204643 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1853B1C51E24E4B4002024F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1853B1C41E24E4B4002024F8 /* Teppei.app */,
+				1853B1DD1E24E4B4002024F8 /* TeppeiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1853B1C61E24E4B4002024F8 /* Teppei */ = {
+			isa = PBXGroup;
+			children = (
+				18BA6D741E3A30440032CB66 /* Entity */,
+				1853B1ED1E24F97C002024F8 /* Controller */,
+				1853B1D01E24E4B4002024F8 /* Main.storyboard */,
+				1853B1C71E24E4B4002024F8 /* Supporting Files */,
+			);
+			path = Teppei;
+			sourceTree = "<group>";
+		};
+		1853B1C71E24E4B4002024F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1853B1D31E24E4B4002024F8 /* Assets.xcassets */,
+				1853B1CA1E24E4B4002024F8 /* AppDelegate.h */,
+				1853B1CB1E24E4B4002024F8 /* AppDelegate.m */,
+				1853B1D51E24E4B4002024F8 /* LaunchScreen.storyboard */,
+				1853B1D81E24E4B4002024F8 /* Info.plist */,
+				1853B1C81E24E4B4002024F8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1853B1E01E24E4B4002024F8 /* TeppeiTests */ = {
+			isa = PBXGroup;
+			children = (
+				1853B1E11E24E4B4002024F8 /* TeppeiTests.m */,
+				1853B1E31E24E4B4002024F8 /* Info.plist */,
+			);
+			path = TeppeiTests;
+			sourceTree = "<group>";
+		};
+		1853B1ED1E24F97C002024F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1853B1CD1E24E4B4002024F8 /* ViewController.h */,
+				1853B1CE1E24E4B4002024F8 /* ViewController.m */,
+				1853B1EE1E24F99A002024F8 /* SignupViewController.h */,
+				1853B1EF1E24F99A002024F8 /* SignupViewController.m */,
+				1853B1F11E24FA73002024F8 /* HomeViewController.h */,
+				1853B1F21E24FA73002024F8 /* HomeViewController.m */,
+				1853B1F41E24FAD9002024F8 /* DoneViewController.h */,
+				1853B1F51E24FAD9002024F8 /* DoneViewController.m */,
+				1853B1F71E24FD59002024F8 /* TeppeiNavigationController.h */,
+				1853B1F81E24FD59002024F8 /* TeppeiNavigationController.m */,
+				18BA6D6E1E3A26FD0032CB66 /* SkillViewController.h */,
+				18BA6D6F1E3A26FD0032CB66 /* SkillViewController.m */,
+				18BA6D711E3A2E9D0032CB66 /* QuestionViewController.h */,
+				18BA6D721E3A2E9D0032CB66 /* QuestionViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		18BA6D741E3A30440032CB66 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				18BA6D751E3A30AD0032CB66 /* Question.h */,
+				18BA6D761E3A30AD0032CB66 /* Question.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		36CB31E57BB6830EDBCC38B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2E71BE1FDD0592CD309A7D1 /* Pods-Teppei.debug.xcconfig */,
+				827832CD51AC31428311878A /* Pods-Teppei.release.xcconfig */,
+				3BA802613B09DCA337ABC7A3 /* Pods-TeppeiTests.debug.xcconfig */,
+				A7665104FA29E3D796CC1216 /* Pods-TeppeiTests.release.xcconfig */,
+				9C6461D3A5820A1F601B69D8 /* Pods-Teppei-TeppeiTests.debug.xcconfig */,
+				44FD878E0313047F991193CB /* Pods-Teppei-TeppeiTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		99A524105DB1BA25C0204643 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				181157081E6D5C0A007EF23E /* libNCMB.a */,
+				9CBF5A5DAFB531E90FBF075C /* libPods-Teppei.a */,
+				326C6C465FF05EE353AFB974 /* libPods-TeppeiTests.a */,
+				68A9A1610103E9D40BF26257 /* libPods-Teppei-TeppeiTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1853B1C31E24E4B4002024F8 /* Teppei */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1853B1E61E24E4B4002024F8 /* Build configuration list for PBXNativeTarget "Teppei" */;
+			buildPhases = (
+				75DFEAC36CC3974084B8F521 /* [CP] Check Pods Manifest.lock */,
+				1853B1C01E24E4B4002024F8 /* Sources */,
+				1853B1C11E24E4B4002024F8 /* Frameworks */,
+				1853B1C21E24E4B4002024F8 /* Resources */,
+				2687CEA890F0FB2EC957A229 /* [CP] Embed Pods Frameworks */,
+				42D2EE7C0943D5989D0D3A7D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Teppei;
+			productName = Teppei;
+			productReference = 1853B1C41E24E4B4002024F8 /* Teppei.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1853B1DC1E24E4B4002024F8 /* TeppeiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1853B1E91E24E4B4002024F8 /* Build configuration list for PBXNativeTarget "TeppeiTests" */;
+			buildPhases = (
+				0027C8BDB3158DD9694B9034 /* [CP] Check Pods Manifest.lock */,
+				1853B1D91E24E4B4002024F8 /* Sources */,
+				1853B1DA1E24E4B4002024F8 /* Frameworks */,
+				1853B1DB1E24E4B4002024F8 /* Resources */,
+				52BDD6BEC7FBDBBD00B37CCD /* [CP] Embed Pods Frameworks */,
+				7E6B9517797E14448801CFBC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1853B1DF1E24E4B4002024F8 /* PBXTargetDependency */,
+			);
+			name = TeppeiTests;
+			productName = TeppeiTests;
+			productReference = 1853B1DD1E24E4B4002024F8 /* TeppeiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1853B1BC1E24E4B3002024F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Welico;
+				TargetAttributes = {
+					1853B1C31E24E4B4002024F8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 36AQE8HEVG;
+						ProvisioningStyle = Automatic;
+					};
+					1853B1DC1E24E4B4002024F8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 36AQE8HEVG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1853B1C31E24E4B4002024F8;
+					};
+				};
+			};
+			buildConfigurationList = 1853B1BF1E24E4B3002024F8 /* Build configuration list for PBXProject "Teppei" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1853B1BB1E24E4B3002024F8;
+			productRefGroup = 1853B1C51E24E4B4002024F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1853B1C31E24E4B4002024F8 /* Teppei */,
+				1853B1DC1E24E4B4002024F8 /* TeppeiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1853B1C21E24E4B4002024F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1853B1D71E24E4B4002024F8 /* LaunchScreen.storyboard in Resources */,
+				1853B1D41E24E4B4002024F8 /* Assets.xcassets in Resources */,
+				1853B1D21E24E4B4002024F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1853B1DB1E24E4B4002024F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0027C8BDB3158DD9694B9034 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2687CEA890F0FB2EC957A229 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teppei/Pods-Teppei-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42D2EE7C0943D5989D0D3A7D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teppei/Pods-Teppei-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52BDD6BEC7FBDBBD00B37CCD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teppei-TeppeiTests/Pods-Teppei-TeppeiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75DFEAC36CC3974084B8F521 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E6B9517797E14448801CFBC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teppei-TeppeiTests/Pods-Teppei-TeppeiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1853B1C01E24E4B4002024F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1853B1F91E24FD59002024F8 /* TeppeiNavigationController.m in Sources */,
+				1853B1F61E24FAD9002024F8 /* DoneViewController.m in Sources */,
+				1853B1CF1E24E4B4002024F8 /* ViewController.m in Sources */,
+				1853B1CC1E24E4B4002024F8 /* AppDelegate.m in Sources */,
+				1853B1F01E24F99A002024F8 /* SignupViewController.m in Sources */,
+				18BA6D731E3A2E9D0032CB66 /* QuestionViewController.m in Sources */,
+				1853B1F31E24FA73002024F8 /* HomeViewController.m in Sources */,
+				18BA6D771E3A30AD0032CB66 /* Question.m in Sources */,
+				18BA6D701E3A26FD0032CB66 /* SkillViewController.m in Sources */,
+				1853B1C91E24E4B4002024F8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1853B1D91E24E4B4002024F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1853B1E21E24E4B4002024F8 /* TeppeiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1853B1DF1E24E4B4002024F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1853B1C31E24E4B4002024F8 /* Teppei */;
+			targetProxy = 1853B1DE1E24E4B4002024F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1853B1D01E24E4B4002024F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1853B1D11E24E4B4002024F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1853B1D51E24E4B4002024F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1853B1D61E24E4B4002024F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1853B1E41E24E4B4002024F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1853B1E51E24E4B4002024F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1853B1E71E24E4B4002024F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2E71BE1FDD0592CD309A7D1 /* Pods-Teppei.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 36AQE8HEVG;
+				INFOPLIST_FILE = Teppei/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NCMB",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Welico.Teppei;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1853B1E81E24E4B4002024F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 827832CD51AC31428311878A /* Pods-Teppei.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 36AQE8HEVG;
+				INFOPLIST_FILE = Teppei/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NCMB",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Welico.Teppei;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1853B1EA1E24E4B4002024F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C6461D3A5820A1F601B69D8 /* Pods-Teppei-TeppeiTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 36AQE8HEVG;
+				INFOPLIST_FILE = TeppeiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Welico.TeppeiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teppei.app/Teppei";
+			};
+			name = Debug;
+		};
+		1853B1EB1E24E4B4002024F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44FD878E0313047F991193CB /* Pods-Teppei-TeppeiTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 36AQE8HEVG;
+				INFOPLIST_FILE = TeppeiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Welico.TeppeiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teppei.app/Teppei";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1853B1BF1E24E4B3002024F8 /* Build configuration list for PBXProject "Teppei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1853B1E41E24E4B4002024F8 /* Debug */,
+				1853B1E51E24E4B4002024F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1853B1E61E24E4B4002024F8 /* Build configuration list for PBXNativeTarget "Teppei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1853B1E71E24E4B4002024F8 /* Debug */,
+				1853B1E81E24E4B4002024F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1853B1E91E24E4B4002024F8 /* Build configuration list for PBXNativeTarget "TeppeiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1853B1EA1E24E4B4002024F8 /* Debug */,
+				1853B1EB1E24E4B4002024F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1853B1BC1E24E4B3002024F8 /* Project object */;
+}
