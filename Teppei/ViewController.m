@@ -7,10 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "NCMB/NCMB.h"
 
 @interface ViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextfield;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextfield;
+@property (weak, nonatomic) IBOutlet UILabel *validLabel;
 
 @end
 
@@ -34,15 +36,35 @@
 
 - (void)updateUI {
     self.navigationController.navigationBar.hidden = true;
+    self.validLabel.hidden = true;
     
     self.userNameTextfield.delegate = self;
     self.passwordTextfield.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)login:(UIButton *)sender {
+    NCMBQuery *getUserQuery = [NCMBQuery queryWithClassName:@"LoginRegister"];
+    
+    
+    [getUserQuery whereKey:@"password" equalTo:self.passwordTextfield.text];
+    [getUserQuery whereKey:@"userName" equalTo:self.userNameTextfield.text];
+    [getUserQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (objects.count == 0 || error) {
+            self.validLabel.hidden = false;
+        } else {
+            [self performSegueWithIdentifier:@"LoginSegue" sender:nil];
+            [self updateUI];
+        }
+    }];
 }
+
+- (Boolean)isValidLoginInfo {
+    
+    
+    
+    return false;
+}
+
 
 
 @end

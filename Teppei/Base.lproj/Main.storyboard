@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yOO-fW-REB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yOO-fW-REB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -33,7 +33,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ANU-ox-54l" kind="show" id="Omn-Fi-P8I"/>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxj-G3-oDh"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="R9r-MS-guS">
@@ -83,6 +83,13 @@
                                 <rect key="frame" x="105" y="102" width="196" height="55"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invalid information login, please try again!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ah-Nu-9Ck">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -90,6 +97,8 @@
                     <connections>
                         <outlet property="passwordTextfield" destination="Zbg-SZ-0dj" id="cs3-SC-FgM"/>
                         <outlet property="userNameTextfield" destination="Qul-54-d2z" id="xbu-6Z-Qxn"/>
+                        <outlet property="validLabel" destination="4ah-Nu-9Ck" id="YWU-RV-fEe"/>
+                        <segue destination="ANU-ox-54l" kind="show" identifier="LoginSegue" id="EKK-e4-nTM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -164,13 +173,20 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ANU-ox-54l" kind="show" id="xJu-zl-UgR"/>
+                                    <action selector="signupAccount:" destination="Km4-AQ-WBU" eventType="touchUpInside" id="xL5-vH-zOj"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoBlack" translatesAutoresizingMaskIntoConstraints="NO" id="Pdf-JG-R1H">
                                 <rect key="frame" x="89" y="117" width="196" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invalid information login, please try again!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df8-md-I9d">
+                                <rect key="frame" x="16" y="390" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -178,6 +194,8 @@
                         <outlet property="emailTextField" destination="jzR-HT-bpB" id="KKE-WX-rnX"/>
                         <outlet property="passwordTextfield" destination="qqb-yh-IZW" id="zSR-WE-Ghk"/>
                         <outlet property="userNameTextfield" destination="9AQ-do-jic" id="gu8-JB-xFD"/>
+                        <outlet property="validInfoLabel" destination="df8-md-I9d" id="xN6-W1-Xqr"/>
+                        <segue destination="ANU-ox-54l" kind="show" identifier="SignupSegue" id="EQo-F3-DZg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wIe-2J-7Rb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -666,6 +684,6 @@
         <image name="username" width="42" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xJu-zl-UgR"/>
+        <segue reference="EQo-F3-DZg"/>
     </inferredMetricsTieBreakers>
 </document>
