@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserInfo.h"
 
 @interface HomeViewController : UIViewController
+
+@property (strong, nonatomic) UserInfo *userInfo;
 
 @end

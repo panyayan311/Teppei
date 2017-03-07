@@ -455,6 +455,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="userNameLabel" destination="KYG-wA-KJr" id="J2a-Ae-zXo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QlD-RE-KWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -684,6 +687,6 @@
         <image name="username" width="42" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EQo-F3-DZg"/>
+        <segue reference="EKK-e4-nTM"/>
     </inferredMetricsTieBreakers>
 </document>

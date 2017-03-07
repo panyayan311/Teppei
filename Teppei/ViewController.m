@@ -8,11 +8,14 @@
 
 #import "ViewController.h"
 #import "NCMB/NCMB.h"
+#import "HomeViewController.h"
+#import "UserInfo.h"
 
 @interface ViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextfield;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextfield;
 @property (weak, nonatomic) IBOutlet UILabel *validLabel;
+@property (strong, nonatomic) UserInfo *userInfo;
 
 @end
 
@@ -52,19 +55,20 @@
         if (objects.count == 0 || error) {
             self.validLabel.hidden = false;
         } else {
+            NSDictionary *estimateData = (NSDictionary *)[objects objectAtIndex:0];
+            self.userInfo = [[UserInfo alloc] initWithDictionary:estimateData];
             [self performSegueWithIdentifier:@"LoginSegue" sender:nil];
             [self updateUI];
         }
     }];
 }
 
-- (Boolean)isValidLoginInfo {
-    
-    
-    
-    return false;
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"LoginSegue"]) {
+        HomeViewController *homeVC = (HomeViewController *)segue.destinationViewController;
+        homeVC.userInfo = self.userInfo;
+    }
 }
-
 
 
 @end

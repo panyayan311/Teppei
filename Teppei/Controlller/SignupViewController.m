@@ -58,6 +58,7 @@
             if (error) {
                 self.validInfoLabel.hidden = false;
             } else {
+                
                 [self performSegueWithIdentifier:@"SignupSegue" sender:nil];
             }
         }];
