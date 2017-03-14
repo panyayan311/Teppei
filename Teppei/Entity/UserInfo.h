@@ -14,6 +14,10 @@
 @property (strong, nonatomic) NSString *userName;
 @property (strong, nonatomic) NSString *email;
 
+// other Info
+@property (strong, nonatomic) NSString *company;
+@property (strong, nonatomic) NSString *position;
+
 - (instancetype)initWithDictionary:(NSDictionary *)userInfoDic;
 
 @end

@@ -8,9 +8,12 @@
 
 #import "DoneViewController.h"
 #import "EvalGraph.h"
+#import "DetailScoreViewController.h"
 
 @interface DoneViewController ()
 @property (weak, nonatomic) IBOutlet EvalGraph *graphView;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UIButton *detailScoreButton;
 
 @end
 
@@ -25,11 +28,20 @@
 
 - (void)setupData {
     if (!_listResult) _listResult = [[NSMutableDictionary alloc] init];
-    [_listResult setObject:@(0.3) forKey:@"異文化理解"];
-    [_listResult setObject:@(0.1) forKey:@"人間的魅力"];
-    [_listResult setObject:@(0.44) forKey:@"プレゼンス"];
-    [_listResult setObject:@(0.5) forKey:@"ビジネス"];
+    
+    for (NSString *categoryID in self.listQuestionCategory.allKeys) {
+        if ([self.listAnswerCategory.allKeys containsObject:categoryID]) {
+            [self.listResult setObject:@([[self.listAnswerCategory objectForKey:categoryID] doubleValue] / [[self.listQuestionCategory objectForKey:categoryID] doubleValue]) forKey:categoryID];
+        } else {
+            [self.listResult setObject:@(0.0) forKey:categoryID];
+        }
+    }
     self.graphView.listResult = self.listResult;
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", (int)(self.correctPercent * 100)];//;
+    if (self.listQuestionCategory.count == 0) {
+        self.graphView.hidden = true;
+    }
+    
 }
 
 
@@ -40,8 +52,22 @@
 
 - (void)setupUI {
     self.title = @"TEPPEI";
+    self.scoreLabel.hidden = !(self.listQuestionCategory.count == 0);
+    self.detailScoreButton.hidden = (self.listQuestionCategory.count == 0);
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"ScoreSegue"]) {
+        DetailScoreViewController *detailScoreVC = segue.destinationViewController;
+        detailScoreVC.listResult = self.listResult;
+    }
+}
+
+- (IBAction)showDetailScore:(UIButton *)sender {
+    if (self.listQuestionCategory.count > 0) {
+        [self performSegueWithIdentifier:@"ScoreSegue" sender:nil];
+    }
+}
 
 
 @end

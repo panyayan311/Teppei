@@ -17,6 +17,8 @@
             if (![userInfoDic isKindOfClass:[NSNull class]]) {
                 _userId = [userInfoDic objectForKey:@"objectId"];
                 _userName = [userInfoDic objectForKey:@"userName"];
+                _company = [userInfoDic objectForKey:@"company"];
+                _position = [userInfoDic objectForKey:@"position"];
             }
             _email = [userInfoDic objectForKey:@"email"];
         } @catch (NSException *exception) {

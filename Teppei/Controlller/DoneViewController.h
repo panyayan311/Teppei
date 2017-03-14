@@ -11,5 +11,8 @@
 @interface DoneViewController : UIViewController
 
 @property (strong, nonatomic) NSMutableDictionary *listResult;
+@property (strong, nonatomic) NSMutableDictionary *listAnswerCategory;
+@property (strong, nonatomic) NSMutableDictionary *listQuestionCategory;
+@property (nonatomic) double correctPercent;
 
 @end

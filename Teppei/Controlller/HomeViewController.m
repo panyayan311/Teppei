@@ -10,6 +10,7 @@
 
 @interface HomeViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 @end
 
@@ -20,13 +21,35 @@
     [self updateUI];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self updateUI];
+}
+
 - (void)updateUI {
     self.title = @"TEPPEI";
     self.navigationController.navigationBar.hidden = false;
+    self.navigationItem.hidesBackButton = true;
+    
     self.userNameLabel.text = self.userInfo.userName;
+    UIImage *avatarImage = [self loadImageFromLocalFile];
+    if (avatarImage) self.avatarImageView.image = avatarImage;
 }
 
 
+- (IBAction)backToHomeUI:(UIStoryboardSegue *)unwindSegue {
+    // nothing to do
+}
+
+
+- (UIImage *)loadImageFromLocalFile {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                         NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString* path = [documentsDirectory stringByAppendingPathComponent: @"avatar.png"];
+    UIImage* image = [UIImage imageWithContentsOfFile:path];
+    return image;
+}
 
 
 

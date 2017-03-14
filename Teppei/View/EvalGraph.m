@@ -7,6 +7,7 @@
 //
 
 #import "EvalGraph.h"
+#import "Constant.h"
 
 @implementation EvalGraph
 
@@ -28,16 +29,16 @@ static const CGFloat pointRadius = 4.0;
 - (void)drawGraphCore {
     UIBezierPath *path = [[UIBezierPath alloc] init];
     CGPoint centerPoint = [self getCenterPointGraph];
-    [path moveToPoint:CGPointMake(centerPoint.x + radius * 0.3, centerPoint.y)];//[[self.listResult objectForKey:@"異文化理解"] doubleValue]
-    [path addLineToPoint:CGPointMake(centerPoint.x, centerPoint.y - radius * 0.1)];//[[self.listResult objectForKey:@"人間的魅力"] doubleValue]
-    [path addLineToPoint:CGPointMake(centerPoint.x - radius * 0.44, centerPoint.y)];//[[self.listResult objectForKey:@"プレゼンス"] doubleValue]
-    [path addLineToPoint:CGPointMake(centerPoint.x, centerPoint.y + radius * 0.5)];//[[self.listResult objectForKey:@"ビジネス"] doubleValue]
+    [path moveToPoint:CGPointMake(centerPoint.x + radius * [[self.listResult objectForKey:kCategoryIdCalture] doubleValue], centerPoint.y)];//
+    [path addLineToPoint:CGPointMake(centerPoint.x, centerPoint.y - radius * [[self.listResult objectForKey:kCategoryIdHuman] doubleValue])];//
+    [path addLineToPoint:CGPointMake(centerPoint.x - radius * [[self.listResult objectForKey:kCategoryIdPrerent] doubleValue], centerPoint.y)];//
+    [path addLineToPoint:CGPointMake(centerPoint.x, centerPoint.y + radius * [[self.listResult objectForKey:kCategoryIdBusiness] doubleValue])];//
     [path closePath];
     
-    [self drawCircleAtPoint:CGPointMake(centerPoint.x + radius * 0.3, centerPoint.y)];
-    [self drawCircleAtPoint:CGPointMake(centerPoint.x, centerPoint.y - radius * 0.1)];
-    [self drawCircleAtPoint:CGPointMake(centerPoint.x - radius * 0.44, centerPoint.y)];
-    [self drawCircleAtPoint:CGPointMake(centerPoint.x, centerPoint.y + radius * 0.5)];
+    [self drawCircleAtPoint:CGPointMake(centerPoint.x + radius * [[self.listResult objectForKey:kCategoryIdCalture] doubleValue], centerPoint.y)];
+    [self drawCircleAtPoint:CGPointMake(centerPoint.x, centerPoint.y - radius * [[self.listResult objectForKey:kCategoryIdHuman] doubleValue])];
+    [self drawCircleAtPoint:CGPointMake(centerPoint.x - radius * [[self.listResult objectForKey:kCategoryIdPrerent] doubleValue], centerPoint.y)];
+    [self drawCircleAtPoint:CGPointMake(centerPoint.x, centerPoint.y + radius * [[self.listResult objectForKey:kCategoryIdBusiness] doubleValue])];
     
     
     [[[UIColor alloc] initWithRed:182/255.0 green:99/255.0 blue:255/255.0 alpha:1] setStroke];

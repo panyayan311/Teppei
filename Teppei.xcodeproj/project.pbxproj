@@ -9,7 +9,15 @@
 /* Begin PBXBuildFile section */
 		0D3C51610A271BC57F20A657 /* libPods-TeppeiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 326C6C465FF05EE353AFB974 /* libPods-TeppeiTests.a */; };
 		16217481F8A29838435CF165 /* libPods-Teppei-TeppeiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A9A1610103E9D40BF26257 /* libPods-Teppei-TeppeiTests.a */; };
+		180432391E77B42500381D04 /* Skill.m in Sources */ = {isa = PBXBuildFile; fileRef = 180432381E77B42500381D04 /* Skill.m */; };
+		1804323C1E77BB3C00381D04 /* DetailSkillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804323B1E77BB3C00381D04 /* DetailSkillViewController.m */; };
+		1804323F1E77BE2400381D04 /* TutorialSkillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804323E1E77BE2400381D04 /* TutorialSkillViewController.m */; };
+		180432431E77CFCF00381D04 /* DetailScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180432421E77CFCF00381D04 /* DetailScoreViewController.m */; };
 		181157091E6D5C0A007EF23E /* libNCMB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 181157081E6D5C0A007EF23E /* libNCMB.a */; };
+		181B02F11E76985000FE690F /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B02F01E76985000FE690F /* Session.m */; };
+		181B02F41E7699C300FE690F /* ManagerSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B02F31E7699C300FE690F /* ManagerSession.m */; };
+		181B02F71E76A93200FE690F /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B02F61E76A93200FE690F /* InfoViewController.m */; };
+		181B02FE1E76BC3F00FE690F /* FSMediaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B02FD1E76BC3F00FE690F /* FSMediaPicker.m */; };
 		1853B1C91E24E4B4002024F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B1C81E24E4B4002024F8 /* main.m */; };
 		1853B1CC1E24E4B4002024F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B1CB1E24E4B4002024F8 /* AppDelegate.m */; };
 		1853B1CF1E24E4B4002024F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B1CE1E24E4B4002024F8 /* ViewController.m */; };
@@ -26,6 +34,7 @@
 		18BA6D701E3A26FD0032CB66 /* SkillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA6D6F1E3A26FD0032CB66 /* SkillViewController.m */; };
 		18BA6D731E3A2E9D0032CB66 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA6D721E3A2E9D0032CB66 /* QuestionViewController.m */; };
 		18BA6D771E3A30AD0032CB66 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA6D761E3A30AD0032CB66 /* Question.m */; };
+		18C946411E7671DE001005F7 /* Sheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C946401E7671DE001005F7 /* Sheet.m */; };
 		B6D348E7E86C838507D3B9B3 /* libPods-Teppei.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBF5A5DAFB531E90FBF075C /* libPods-Teppei.a */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +49,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180432371E77B42500381D04 /* Skill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Skill.h; path = Entity/Skill.h; sourceTree = "<group>"; };
+		180432381E77B42500381D04 /* Skill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Skill.m; path = Entity/Skill.m; sourceTree = "<group>"; };
+		1804323A1E77BB3C00381D04 /* DetailSkillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailSkillViewController.h; path = Controlller/DetailSkillViewController.h; sourceTree = "<group>"; };
+		1804323B1E77BB3C00381D04 /* DetailSkillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailSkillViewController.m; path = Controlller/DetailSkillViewController.m; sourceTree = "<group>"; };
+		1804323D1E77BE2400381D04 /* TutorialSkillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialSkillViewController.h; path = Controlller/TutorialSkillViewController.h; sourceTree = "<group>"; };
+		1804323E1E77BE2400381D04 /* TutorialSkillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialSkillViewController.m; path = Controlller/TutorialSkillViewController.m; sourceTree = "<group>"; };
+		180432401E77CE4700381D04 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		180432411E77CFCF00381D04 /* DetailScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailScoreViewController.h; path = Controlller/DetailScoreViewController.h; sourceTree = "<group>"; };
+		180432421E77CFCF00381D04 /* DetailScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailScoreViewController.m; path = Controlller/DetailScoreViewController.m; sourceTree = "<group>"; };
 		181157081E6D5C0A007EF23E /* libNCMB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNCMB.a; path = "Pods/../build/Debug-iphoneos/NCMB/libNCMB.a"; sourceTree = "<group>"; };
+		181B02EF1E76985000FE690F /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Session.h; path = Entity/Session.h; sourceTree = "<group>"; };
+		181B02F01E76985000FE690F /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Session.m; path = Entity/Session.m; sourceTree = "<group>"; };
+		181B02F21E7699C300FE690F /* ManagerSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerSession.h; sourceTree = "<group>"; };
+		181B02F31E7699C300FE690F /* ManagerSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerSession.m; sourceTree = "<group>"; };
+		181B02F51E76A93200FE690F /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewController.h; path = Controlller/InfoViewController.h; sourceTree = "<group>"; };
+		181B02F61E76A93200FE690F /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewController.m; path = Controlller/InfoViewController.m; sourceTree = "<group>"; };
+		181B02FC1E76BC3F00FE690F /* FSMediaPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMediaPicker.h; sourceTree = "<group>"; };
+		181B02FD1E76BC3F00FE690F /* FSMediaPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMediaPicker.m; sourceTree = "<group>"; };
 		1853B1C41E24E4B4002024F8 /* Teppei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teppei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1853B1C81E24E4B4002024F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1853B1CA1E24E4B4002024F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +98,8 @@
 		18BA6D721E3A2E9D0032CB66 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionViewController.m; path = Controlller/QuestionViewController.m; sourceTree = "<group>"; };
 		18BA6D751E3A30AD0032CB66 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Question.h; path = Entity/Question.h; sourceTree = "<group>"; };
 		18BA6D761E3A30AD0032CB66 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Question.m; path = Entity/Question.m; sourceTree = "<group>"; };
+		18C9463F1E7671DE001005F7 /* Sheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sheet.h; path = Entity/Sheet.h; sourceTree = "<group>"; };
+		18C946401E7671DE001005F7 /* Sheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sheet.m; path = Entity/Sheet.m; sourceTree = "<group>"; };
 		326C6C465FF05EE353AFB974 /* libPods-TeppeiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TeppeiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA802613B09DCA337ABC7A3 /* Pods-TeppeiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeppeiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeppeiTests/Pods-TeppeiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		44FD878E0313047F991193CB /* Pods-Teppei-TeppeiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teppei-TeppeiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teppei-TeppeiTests/Pods-Teppei-TeppeiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +133,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181B02F81E76BA8600FE690F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				181B02FC1E76BC3F00FE690F /* FSMediaPicker.h */,
+				181B02FD1E76BC3F00FE690F /* FSMediaPicker.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
 		1853B1BB1E24E4B3002024F8 = {
 			isa = PBXGroup;
 			children = (
@@ -129,9 +166,10 @@
 			isa = PBXGroup;
 			children = (
 				186318A21E71373500C7E5FD /* View */,
-				18BA6D741E3A30440032CB66 /* Entity */,
 				1853B1ED1E24F97C002024F8 /* Controller */,
 				1853B1D01E24E4B4002024F8 /* Main.storyboard */,
+				18BA6D741E3A30440032CB66 /* Entity */,
+				181B02F81E76BA8600FE690F /* Library */,
 				1853B1C71E24E4B4002024F8 /* Supporting Files */,
 			);
 			path = Teppei;
@@ -146,6 +184,9 @@
 				1853B1D51E24E4B4002024F8 /* LaunchScreen.storyboard */,
 				1853B1D81E24E4B4002024F8 /* Info.plist */,
 				1853B1C81E24E4B4002024F8 /* main.m */,
+				181B02F21E7699C300FE690F /* ManagerSession.h */,
+				181B02F31E7699C300FE690F /* ManagerSession.m */,
+				180432401E77CE4700381D04 /* Constant.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -176,6 +217,14 @@
 				18BA6D6F1E3A26FD0032CB66 /* SkillViewController.m */,
 				18BA6D711E3A2E9D0032CB66 /* QuestionViewController.h */,
 				18BA6D721E3A2E9D0032CB66 /* QuestionViewController.m */,
+				181B02F51E76A93200FE690F /* InfoViewController.h */,
+				181B02F61E76A93200FE690F /* InfoViewController.m */,
+				1804323A1E77BB3C00381D04 /* DetailSkillViewController.h */,
+				1804323B1E77BB3C00381D04 /* DetailSkillViewController.m */,
+				1804323D1E77BE2400381D04 /* TutorialSkillViewController.h */,
+				1804323E1E77BE2400381D04 /* TutorialSkillViewController.m */,
+				180432411E77CFCF00381D04 /* DetailScoreViewController.h */,
+				180432421E77CFCF00381D04 /* DetailScoreViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -196,6 +245,12 @@
 				18BA6D761E3A30AD0032CB66 /* Question.m */,
 				186C53E71E6E9B7E00A79735 /* UserInfo.h */,
 				186C53E81E6E9B7E00A79735 /* UserInfo.m */,
+				18C9463F1E7671DE001005F7 /* Sheet.h */,
+				18C946401E7671DE001005F7 /* Sheet.m */,
+				181B02EF1E76985000FE690F /* Session.h */,
+				181B02F01E76985000FE690F /* Session.m */,
+				180432371E77B42500381D04 /* Skill.h */,
+				180432381E77B42500381D04 /* Skill.m */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
@@ -428,15 +483,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				1853B1F91E24FD59002024F8 /* TeppeiNavigationController.m in Sources */,
+				1804323C1E77BB3C00381D04 /* DetailSkillViewController.m in Sources */,
 				1853B1F61E24FAD9002024F8 /* DoneViewController.m in Sources */,
+				181B02F41E7699C300FE690F /* ManagerSession.m in Sources */,
 				1853B1CF1E24E4B4002024F8 /* ViewController.m in Sources */,
+				181B02FE1E76BC3F00FE690F /* FSMediaPicker.m in Sources */,
 				1853B1CC1E24E4B4002024F8 /* AppDelegate.m in Sources */,
 				1853B1F01E24F99A002024F8 /* SignupViewController.m in Sources */,
 				18BA6D731E3A2E9D0032CB66 /* QuestionViewController.m in Sources */,
+				181B02F11E76985000FE690F /* Session.m in Sources */,
+				1804323F1E77BE2400381D04 /* TutorialSkillViewController.m in Sources */,
+				180432391E77B42500381D04 /* Skill.m in Sources */,
 				1853B1F31E24FA73002024F8 /* HomeViewController.m in Sources */,
 				18BA6D771E3A30AD0032CB66 /* Question.m in Sources */,
+				181B02F71E76A93200FE690F /* InfoViewController.m in Sources */,
 				186318A51E71375C00C7E5FD /* EvalGraph.m in Sources */,
 				186C53E91E6E9B7E00A79735 /* UserInfo.m in Sources */,
+				180432431E77CFCF00381D04 /* DetailScoreViewController.m in Sources */,
+				18C946411E7671DE001005F7 /* Sheet.m in Sources */,
 				18BA6D701E3A26FD0032CB66 /* SkillViewController.m in Sources */,
 				1853B1C91E24E4B4002024F8 /* main.m in Sources */,
 			);
