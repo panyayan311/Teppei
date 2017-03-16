@@ -11,4 +11,7 @@
 
 @interface QuestionViewController : UIViewController
 
+@property (nonatomic) Boolean isDisplayHistory; // of history
+@property NSDate *historyDateTime;
+
 @end

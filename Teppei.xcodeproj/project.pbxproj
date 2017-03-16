@@ -31,6 +31,8 @@
 		1853B1F91E24FD59002024F8 /* TeppeiNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853B1F81E24FD59002024F8 /* TeppeiNavigationController.m */; };
 		186318A51E71375C00C7E5FD /* EvalGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 186318A41E71375C00C7E5FD /* EvalGraph.m */; };
 		186C53E91E6E9B7E00A79735 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C53E81E6E9B7E00A79735 /* UserInfo.m */; };
+		18870B441E7A77BF00E8C367 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18870B431E7A77BF00E8C367 /* HistoryViewController.m */; };
+		18870B471E7A878400E8C367 /* AnswerQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 18870B461E7A878400E8C367 /* AnswerQuestion.m */; };
 		18BA6D701E3A26FD0032CB66 /* SkillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA6D6F1E3A26FD0032CB66 /* SkillViewController.m */; };
 		18BA6D731E3A2E9D0032CB66 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA6D721E3A2E9D0032CB66 /* QuestionViewController.m */; };
 		18BA6D771E3A30AD0032CB66 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA6D761E3A30AD0032CB66 /* Question.m */; };
@@ -92,6 +94,10 @@
 		186318A41E71375C00C7E5FD /* EvalGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EvalGraph.m; path = View/EvalGraph.m; sourceTree = "<group>"; };
 		186C53E71E6E9B7E00A79735 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserInfo.h; path = Entity/UserInfo.h; sourceTree = "<group>"; };
 		186C53E81E6E9B7E00A79735 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfo.m; path = Entity/UserInfo.m; sourceTree = "<group>"; };
+		18870B421E7A77BF00E8C367 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryViewController.h; path = Controlller/HistoryViewController.h; sourceTree = "<group>"; };
+		18870B431E7A77BF00E8C367 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryViewController.m; path = Controlller/HistoryViewController.m; sourceTree = "<group>"; };
+		18870B451E7A878400E8C367 /* AnswerQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnswerQuestion.h; path = Entity/AnswerQuestion.h; sourceTree = "<group>"; };
+		18870B461E7A878400E8C367 /* AnswerQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnswerQuestion.m; path = Entity/AnswerQuestion.m; sourceTree = "<group>"; };
 		18BA6D6E1E3A26FD0032CB66 /* SkillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillViewController.h; sourceTree = "<group>"; };
 		18BA6D6F1E3A26FD0032CB66 /* SkillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillViewController.m; sourceTree = "<group>"; };
 		18BA6D711E3A2E9D0032CB66 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionViewController.h; path = Controlller/QuestionViewController.h; sourceTree = "<group>"; };
@@ -225,6 +231,8 @@
 				1804323E1E77BE2400381D04 /* TutorialSkillViewController.m */,
 				180432411E77CFCF00381D04 /* DetailScoreViewController.h */,
 				180432421E77CFCF00381D04 /* DetailScoreViewController.m */,
+				18870B421E7A77BF00E8C367 /* HistoryViewController.h */,
+				18870B431E7A77BF00E8C367 /* HistoryViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -251,6 +259,8 @@
 				181B02F01E76985000FE690F /* Session.m */,
 				180432371E77B42500381D04 /* Skill.h */,
 				180432381E77B42500381D04 /* Skill.m */,
+				18870B451E7A878400E8C367 /* AnswerQuestion.h */,
+				18870B461E7A878400E8C367 /* AnswerQuestion.m */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
@@ -497,6 +507,8 @@
 				1853B1F31E24FA73002024F8 /* HomeViewController.m in Sources */,
 				18BA6D771E3A30AD0032CB66 /* Question.m in Sources */,
 				181B02F71E76A93200FE690F /* InfoViewController.m in Sources */,
+				18870B471E7A878400E8C367 /* AnswerQuestion.m in Sources */,
+				18870B441E7A77BF00E8C367 /* HistoryViewController.m in Sources */,
 				186318A51E71375C00C7E5FD /* EvalGraph.m in Sources */,
 				186C53E91E6E9B7E00A79735 /* UserInfo.m in Sources */,
 				180432431E77CFCF00381D04 /* DetailScoreViewController.m in Sources */,

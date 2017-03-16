@@ -15,6 +15,7 @@
 @property (nonatomic) NSInteger sttQuestion;
 @property (nonatomic) NSInteger answerQuestion; // 1: yes, 0: no, -1: not all
 @property (strong, nonatomic) NSString *categoryID;
+@property (strong, nonatomic) NSString *sheetId;
 
 - (instancetype)initQuestionWithQuestion:(NSString *)question
                                   andStt:(NSInteger)sttQuestion;

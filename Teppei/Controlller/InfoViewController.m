@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *changeImageButton;
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
 @property (weak, nonatomic) IBOutlet UIButton *editButton;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 
 @end
 
@@ -44,6 +45,7 @@
                 self.userInfo = [[UserInfo alloc] initWithDictionary:objects[0]];
                 self.companyTextField.text = self.userInfo.company;
                 self.positionTextField.text = self.userInfo.position;
+                self.nameLabel.text = self.userInfo.userName;
             }
             
         }
@@ -58,6 +60,7 @@
     UIImage *avatarImage = [self loadImageFromLocalFile];
     if (avatarImage) self.profileImageView.image = avatarImage;
     [self.editButton setTitle:(self.isUpdate ? @"Done": @"Edit") forState:UIControlStateNormal];
+   
 }
 
 - (UIImage *)loadImageFromLocalFile {

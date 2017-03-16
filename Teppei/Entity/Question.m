@@ -27,6 +27,7 @@
             _questionID = [questionDic objectForKey:@"objectId"];
             _categoryID = [questionDic objectForKey:@"categoryID"];
             _question = [questionDic objectForKey:@"question"];
+            _sheetId = [questionDic objectForKey:@"sheetId"];
             
         } @catch (NSException *exception) {
             //none

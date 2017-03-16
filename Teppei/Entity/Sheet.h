@@ -10,7 +10,7 @@
 
 @interface Sheet : NSObject
 
-@property (strong, nonatomic) NSString *id;
+@property (strong, nonatomic) NSString *sheetId;
 @property (nonatomic) NSString *isActive;
 @property (strong, nonatomic) NSString *name;
 

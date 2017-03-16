@@ -14,7 +14,7 @@
     self = [super init];
     if (self) {
         @try {
-            _id = [sheetDic objectForKey:@"objectId"];
+            _sheetId = [sheetDic objectForKey:@"objectId"];
             _name = [sheetDic objectForKey:@"name"];
             _isActive = [sheetDic objectForKey:@"isActive"];
         } @catch (NSException *exception) {

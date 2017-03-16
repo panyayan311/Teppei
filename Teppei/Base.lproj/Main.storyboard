@@ -326,6 +326,7 @@
                         <outlet property="companyTextField" destination="oGN-qw-Zo7" id="ZfX-2B-89K"/>
                         <outlet property="editButton" destination="N7e-8z-Dpv" id="TdL-h0-KBo"/>
                         <outlet property="historyButton" destination="2Tx-Kw-3oi" id="vzt-ey-Xqg"/>
+                        <outlet property="nameLabel" destination="V5g-4W-wB5" id="wik-0l-Pqo"/>
                         <outlet property="positionTextField" destination="Fnq-EW-TvE" id="3Zi-RK-td8"/>
                         <outlet property="profileImageView" destination="PLZ-UA-k27" id="vdN-YB-9Ah"/>
                     </connections>
@@ -334,20 +335,20 @@
             </objects>
             <point key="canvasLocation" x="2608.8000000000002" y="440.32983508245883"/>
         </scene>
-        <!--Table View Controller-->
+        <!--History View Controller-->
         <scene sceneID="Y5Q-2u-fJ7">
             <objects>
-                <tableViewController id="HmM-Uk-MaU" sceneMemberID="viewController">
+                <tableViewController id="HmM-Uk-MaU" customClass="HistoryViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zu3-8q-Vqn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Dfs-fd-3HC">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HistoryCell" id="Dfs-fd-3HC">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dfs-fd-3HC" id="4hJ-8e-5qa">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -357,6 +358,9 @@
                             <outlet property="delegate" destination="HmM-Uk-MaU" id="DKa-F0-bKG"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="fmW-re-EQB" kind="show" identifier="HistorySegue" id="LIz-VY-vCd"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S75-zk-oVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -640,8 +644,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="noButton" destination="MiQ-1X-KAU" id="85S-Bb-Dq0"/>
+                        <outlet property="noneButton" destination="qT6-4o-jUg" id="rhA-Tf-igq"/>
                         <outlet property="questionTextView" destination="fJk-mR-9KU" id="ynF-Hj-CIJ"/>
                         <outlet property="questionTitleLabel" destination="68V-uj-nfI" id="m54-te-NcI"/>
+                        <outlet property="yesButton" destination="8aK-On-UQA" id="bte-8c-qAp"/>
                         <segue destination="E4J-LP-yUe" kind="show" identifier="ResultGraph" id="KIu-nx-IJW"/>
                     </connections>
                 </viewController>
@@ -887,6 +894,7 @@
         <image name="username" width="42" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="LIz-VY-vCd"/>
         <segue reference="EKK-e4-nTM"/>
     </inferredMetricsTieBreakers>
 </document>
